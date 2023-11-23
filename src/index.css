@@ -1,0 +1,202 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root
+{
+    --main-color:#0aad0a;
+    --light-color:#f0f3f2;
+    --shadow: rgba(145,158,171,.2) 0px 2px 4px -1px,rgba(145,158,171,.14) 0px 4px 5px 0px,rgba(145,158,171,.12) 0px 1px 10px 0px;
+    --font-family:'Encode Sans Expanded', sans-serif;
+    --rating-color:#ffc908;
+    --main-font:'Poppins', sans-serif;
+}
+
+body{
+    font-family: var(--font-family) !important;
+}
+h2,h1{
+    font-weight: 400 !important;
+}
+
+nav{
+    font-family: var(--main-font);
+    font-weight: 500;
+}
+nav .navElement li a {
+    color: #033b4a !important;  
+}
+.rating-color
+{
+    color: var(--rating-color);
+}
+.cursor-pointer
+{
+    cursor: pointer;
+}
+a , a:hover{
+    color: black !important;
+    text-decoration: none !important;
+}
+
+.product .btn 
+{
+    transition: transform 1s , opacity 1s;
+    transform: translateY(100%);
+    opacity: 0;
+}
+.product:hover .btn 
+{
+    opacity: 1;
+    transform: translateY(0%);
+
+}
+.font-sm
+{
+    font-size: 14px;
+}
+.text-main
+{
+    color: var(--main-color);
+}
+.bg-main
+{
+    background-color: var(--main-color) !important;
+}
+.bg-main-light 
+{
+    background-color: var(--light-color) !important;
+}
+
+.brand{
+    transition: 1s;
+}
+.brand:hover{
+
+    box-shadow: 2px 2px 20px 0px #0aad0a;
+    cursor: pointer;
+}
+
+.test {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .test img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .categoryItems{
+    transition: 1s;
+    cursor: pointer;
+  }
+  .categoryItems:hover{
+    box-shadow: 2px 2px 20px 0px #0aad0a;
+  }
+  .isloadingBacground{
+    background-color: rgba(128, 128, 128, 0.5);
+    z-index: 999999999;
+
+}
+.cartIcon{
+    
+    font-size: 20px;
+    margin-right: 3px;
+    color: gray;
+}
+.numberOfCart{
+    background-color: #0aad0a;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: -6px;
+    right: -7px;
+
+    
+}
+.number{
+    font-size: 12px;
+}
+
+
+
+  
+ nav li a.active {
+    color: #0aad0a !important;
+  }
+
+.text-red{
+    color: red;
+}
+
+
+form input:focus{
+    box-shadow: 0 0 1px 5px rgba(0, 170, 10, 0.4)  !important;
+
+    border:  solid 1px rgba(0, 170, 10, 0.5)  !important;
+}
+input:focus{
+    box-shadow: 0 0 1px 5px rgba(0, 170, 10, 0.4)  !important;
+    
+    border:  solid 1px rgba(0, 170, 10, 0.5)  !important;
+
+}
+form label{
+    
+    font-family: var(--main-font);
+    font-weight: 500;
+}
+.main-font{
+    font-family: var(--main-font);
+}
+body{
+    font-family: var(--main-font) !important;
+}
+.socialIcons div{
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 50%;
+    background-color: gray;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialIcons div{
+  transition: .3s ease all;
+}
+.socialIcons div:hover{
+  transform: scale(.85);
+
+}
+
+.cart {
+    transition: all ease  .6s;
+}
+.cart:hover{
+    box-shadow: 0 0 10px 8px  rgba(0, 128, 0, 0.3) !important  ;
+
+}
+
+@media(max-width:576px){
+    .login {
+       
+        padding: 20px 15px !important;
+    }
+    .login .form-login h2{
+        font-size: 19px;
+    }
+    .register-form{
+        padding: 20px 15px !important;
+        width: 90% !important;
+        
+    }
+}
