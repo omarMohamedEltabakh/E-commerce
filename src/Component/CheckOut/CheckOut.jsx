@@ -1,7 +1,7 @@
-import React, { useContext, useEffect, useState, } from "react";
+import React, { useContext} from "react";
 import { useFormik } from "formik";
 
-import { json, useParams } from "react-router-dom";
+import {useParams} from "react-router-dom";
 import { cartContext } from "../../Context/CartContext";
 import axios from "axios";
 
@@ -53,7 +53,7 @@ export default function CheckOut() {
       phone: "",
       city: "",
 
-    }, onSubmit: chekout
+    }, onSubmit:chekout
   })
 
   return <>
